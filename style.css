@@ -1,0 +1,101 @@
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: black;
+  }
+
+  .dark-mode {
+      background-color: #121212;
+      color: #f4f4f4;
+  }
+
+  header,
+  .section {
+      padding: 1rem;
+      border-bottom: 1px solid #ccc;
+  }
+
+  .section {
+      margin-bottom: 1rem;
+  }
+
+  h2 {
+      margin-top: 0;
+  }
+
+  h1 {
+      text-align: center;
+      margin: 0;
+      padding: 1rem;
+      background-color: green;
+      color: white;
+      border: 1px solid green;
+      border-radius: 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  }
+
+  .item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+  }
+
+  input[type="number"],
+  input[type="date"] {
+      width: 120px;
+      padding: 4px;
+  }
+
+  .btn {
+      padding: 0.5rem 1rem;
+      background-color: #28a745;
+      color: white;
+      border: 1px solid #28a745;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+      margin: 1rem 0;
+      transform: 0.7s;
+      transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .btn:hover {
+      background-color: #218838;
+  }
+
+  .bottom-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 12px 12px 12px 12px;
+      width: 80%;
+      height: 80%;
+      left: 50% auto;
+      gap: 1rem;
+      margin: 2rem;
+      border: 2px solid #ccc;
+      padding: 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  }
+
+  #totais {
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+      .item {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+
+      input[type="number"],
+      input[type="date"] {
+          width: 100%;
+      }
+  }

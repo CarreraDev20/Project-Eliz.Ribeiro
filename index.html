@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To De List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Compras</h1>
+        <button onclick="toggleTheme()" class="btn">Alternar Tema</button>
+    </header>
+
+    <div id="listas"></div>
+
+    <div class="bottom-actions">
+        <div id="totais">Total de Itens: 0 | Valor Total: R$ 0,00</div>
+        <button class="btn" onclick="confirmarFinalizar()">Finalizar Compras!</button>
+        <button class="btn" onclick="gerarPDF()">Gerar PDF</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
